@@ -1,9 +1,18 @@
 {
   "name": "scenepipe",
   "version": "0.1.0",
-  "description": "Bootstrap a brand-consistent, AI-authored, deterministically-rendered social media content pipeline (reels, posts, carousels, stories) in one command.",
+  "description": "npx scenepipe — AI-authored, Remotion-rendered, brand-consistent short-form video. No AI-generated rendering code, ever.",
   "type": "module",
   "license": "MIT",
+  "author": "Shashi Kanth",
+  "homepage": "https://github.com/shashikanth-gs/ScenePipe#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashikanth-gs/ScenePipe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shashikanth-gs/ScenePipe/issues"
+  },
   "bin": {
     "scenepipe": "./bin/scenepipe.mjs"
   },
@@ -18,8 +27,11 @@
   "keywords": [
     "remotion",
     "instagram",
+    "reels",
     "content-generation",
+    "video-generation",
     "claude-code",
+    "codex",
     "ai-agent",
     "social-media"
   ],

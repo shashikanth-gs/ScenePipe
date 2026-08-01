@@ -14,6 +14,29 @@ async function isEmptyOrMissing(dir) {
   }
 }
 
+/** Creates real symlinks — .claude/skills/<name> and/or .codex/skills/<name>,
+ * each pointing at ../../skills/<name> — only for the agent(s) actually
+ * requested. Generated fresh on the target's own filesystem every time,
+ * rather than shipped pre-made, since those are the only kind guaranteed to
+ * survive however this package reached the user (npm tarball, git clone,
+ * local dev checkout — all handled identically by doing this at scaffold
+ * time instead of relying on the source having pre-built symlinks). */
+async function linkSkillsForAgents(resolvedTarget, { claude, codex }) {
+  const skillNames = await fs.readdir(path.join(resolvedTarget, "skills"));
+
+  for (const [agent, enabled] of [
+    ["claude", claude],
+    ["codex", codex],
+  ]) {
+    if (!enabled) continue;
+    const skillsDir = path.join(resolvedTarget, `.${agent}`, "skills");
+    await fs.mkdir(skillsDir, { recursive: true });
+    for (const name of skillNames) {
+      await fs.symlink(path.join("..", "..", "skills", name), path.join(skillsDir, name));
+    }
+  }
+}
+
 export async function init({ packageRoot, targetDir, claude, codex, yes, skipInstall, force }) {
   const resolvedTarget = path.resolve(process.cwd(), targetDir);
   const templateDir = path.join(packageRoot, "template");
@@ -27,22 +50,16 @@ export async function init({ packageRoot, targetDir, claude, codex, yes, skipIns
 
   console.log(`Scaffolding scenepipe into ${resolvedTarget} ...`);
   await fs.mkdir(resolvedTarget, { recursive: true });
-  // verbatimSymlinks is required: without it, Node rewrites relative symlinks
-  // (e.g. .claude/skills/* -> ../../skills/*) into absolute paths pointing at
-  // THIS package's own template/ directory instead of the new project's own
-  // copy — which would break the moment this tool runs on anyone else's
-  // machine or from a published npm package.
-  await fs.cp(templateDir, resolvedTarget, { recursive: true, verbatimSymlinks: true });
+  // The template itself ships NO .claude/ or .codex/ directories — npm pack
+  // silently drops symlinks from published tarballs (verified directly: they
+  // never appear in `npm pack --dry-run`'s file list), so anything we shipped
+  // pre-symlinked in template/ would be missing entirely for anyone who
+  // installed from the real published package. Instead, skills/<name>/ ships
+  // as real files, and the agent-specific symlinks are created fresh below,
+  // directly on the user's own filesystem, every time.
+  await fs.cp(templateDir, resolvedTarget, { recursive: true });
 
-  // The template ships skills/ symlinks for every supported agent
-  // unconditionally — only remove the ones that weren't actually requested,
-  // so a project only ends up with the agent directories it asked for.
-  if (!claude) {
-    await fs.rm(path.join(resolvedTarget, ".claude"), { recursive: true, force: true });
-  }
-  if (!codex) {
-    await fs.rm(path.join(resolvedTarget, ".codex"), { recursive: true, force: true });
-  }
+  await linkSkillsForAgents(resolvedTarget, { claude, codex });
 
   const brand = yes ? null : await askBrandQuestions(packageRoot);
   await writeBrandKit(resolvedTarget, brand);
