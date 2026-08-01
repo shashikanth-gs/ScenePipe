@@ -1,6 +1,6 @@
 # Your scenepipe project
 
-Scaffolded by [scenepipe](https://github.com/) — see `AGENTS.md` (repo root)
+Scaffolded by [scenepipe](https://github.com/shashikanth-gs/ScenePipe) — see `AGENTS.md` (repo root)
 for how the AI-authoring workflow works.
 
 ## Before your first real run

@@ -115,8 +115,8 @@ Built and working, not finished — here's the honest state:
   Instagram is still on you.
 - **No dashboard yet** to watch a job's progress live — the data's there
   (`content/<slug>/status.json`), the UI to read it isn't built.
-- **Not on npm yet** — clone this repo and run it from source in the
-  meantime (`node bin/scenepipe.mjs --claude`).
+- **Published on npm** as `scenepipe` — `npx scenepipe --claude` works
+  directly, no clone needed.
 
 Want to add a treatment, a visual style, or tackle any of the above? See
 [`CONTRIBUTING.md`](./CONTRIBUTING.md).
