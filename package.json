@@ -1,6 +1,6 @@
 {
   "name": "scenepipe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "npx scenepipe — AI-authored, Remotion-rendered, brand-consistent short-form video. No AI-generated rendering code, ever.",
   "type": "module",
   "license": "MIT",
