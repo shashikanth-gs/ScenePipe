@@ -1,0 +1,36 @@
+{
+  "brandKitPath": "brand/brand-kit.json",
+  "brandDocPath": "brand/BRAND.md",
+  "platforms": {
+    "instagram": {
+      "enabled": true,
+      "assetTypes": ["reel", "carousel", "story", "post"]
+    },
+    "threads": {
+      "enabled": false,
+      "assetTypes": ["post"]
+    },
+    "x": {
+      "enabled": false,
+      "assetTypes": ["post"]
+    }
+  },
+  "strategy": {
+    "mode": "auto",
+    "_modeOptions": "auto = AI decides which enabled platform/assetType combos fit this input; fixed = always generate one of every enabled combo"
+  },
+  "voice": {
+    "provider": "macos-say",
+    "fallback": ["macos-say"],
+    "voice": "Samantha",
+    "language": "en-US",
+    "preferNativeTimestamps": true
+  },
+  "render": {
+    "fps": 30,
+    "reelDurationSeconds": 30,
+    "reelDimensions": { "width": 1080, "height": 1920 },
+    "postDimensions": { "width": 1080, "height": 1350 },
+    "storyDimensions": { "width": 1080, "height": 1920 }
+  }
+}

@@ -1,0 +1,583 @@
+[
+  {
+    "text": "Here",
+    "startMs": 40,
+    "endMs": 280,
+    "timestampMs": 180,
+    "confidence": 0.989323
+  },
+  {
+    "text": "'s",
+    "startMs": 280,
+    "endMs": 400,
+    "timestampMs": 280,
+    "confidence": 0.998666
+  },
+  {
+    "text": " your",
+    "startMs": 400,
+    "endMs": 670,
+    "timestampMs": 440,
+    "confidence": 0.987483
+  },
+  {
+    "text": " Bangalore",
+    "startMs": 670,
+    "endMs": 1280,
+    "timestampMs": 900,
+    "confidence": 0.975988
+  },
+  {
+    "text": " weather",
+    "startMs": 1280,
+    "endMs": 1790,
+    "timestampMs": 1260,
+    "confidence": 0.888993
+  },
+  {
+    "text": " update",
+    "startMs": 1790,
+    "endMs": 2150,
+    "timestampMs": 1660,
+    "confidence": 0.998822
+  },
+  {
+    "text": " for",
+    "startMs": 2150,
+    "endMs": 2340,
+    "timestampMs": 1900,
+    "confidence": 0.999886
+  },
+  {
+    "text": " today",
+    "startMs": 2340,
+    "endMs": 2690,
+    "timestampMs": 2340,
+    "confidence": 0.999718
+  },
+  {
+    "text": ",",
+    "startMs": 2690,
+    "endMs": 2820,
+    "timestampMs": 2660,
+    "confidence": 0.939488
+  },
+  {
+    "text": " August",
+    "startMs": 2820,
+    "endMs": 3220,
+    "timestampMs": 2880,
+    "confidence": 0.822842
+  },
+  {
+    "text": " 1",
+    "startMs": 3220,
+    "endMs": 3480,
+    "timestampMs": 3300,
+    "confidence": 0.991972
+  },
+  {
+    "text": "Right",
+    "startMs": 3488.91156462585,
+    "endMs": 3868.91156462585,
+    "timestampMs": 3718.91156462585,
+    "confidence": 0.964126
+  },
+  {
+    "text": " now",
+    "startMs": 3868.91156462585,
+    "endMs": 4088.91156462585,
+    "timestampMs": 4078.91156462585,
+    "confidence": 0.99354
+  },
+  {
+    "text": ",",
+    "startMs": 4088.91156462585,
+    "endMs": 4328.911564625851,
+    "timestampMs": 4338.911564625851,
+    "confidence": 0.868076
+  },
+  {
+    "text": " it",
+    "startMs": 4328.911564625851,
+    "endMs": 4398.911564625851,
+    "timestampMs": 4478.911564625851,
+    "confidence": 0.941792
+  },
+  {
+    "text": "'s",
+    "startMs": 4398.911564625851,
+    "endMs": 4578.911564625851,
+    "timestampMs": 4578.911564625851,
+    "confidence": 0.994829
+  },
+  {
+    "text": " 26",
+    "startMs": 4578.911564625851,
+    "endMs": 5178.911564625851,
+    "timestampMs": 5018.911564625851,
+    "confidence": 0.986169
+  },
+  {
+    "text": " degrees",
+    "startMs": 5178.911564625851,
+    "endMs": 5568.911564625851,
+    "timestampMs": 5478.911564625851,
+    "confidence": 0.896351
+  },
+  {
+    "text": " and",
+    "startMs": 5568.911564625851,
+    "endMs": 5798.911564625851,
+    "timestampMs": 5698.911564625851,
+    "confidence": 0.972921
+  },
+  {
+    "text": " partly",
+    "startMs": 5798.911564625851,
+    "endMs": 6268.911564625851,
+    "timestampMs": 6038.911564625851,
+    "confidence": 0.995161
+  },
+  {
+    "text": " cloudy",
+    "startMs": 6268.911564625851,
+    "endMs": 6878.911564625851,
+    "timestampMs": 6458.911564625851,
+    "confidence": 0.998782
+  },
+  {
+    "text": ",",
+    "startMs": 6878.911564625851,
+    "endMs": 6938.911564625851,
+    "timestampMs": 6858.911564625851,
+    "confidence": 0.827854
+  },
+  {
+    "text": " feeling",
+    "startMs": 6938.911564625851,
+    "endMs": 7478.911564625851,
+    "timestampMs": 7118.911564625851,
+    "confidence": 0.812629
+  },
+  {
+    "text": " like",
+    "startMs": 7478.911564625851,
+    "endMs": 7788.911564625851,
+    "timestampMs": 7398.911564625851,
+    "confidence": 0.996191
+  },
+  {
+    "text": " 25",
+    "startMs": 7788.911564625851,
+    "endMs": 8318.91156462585,
+    "timestampMs": 7998.911564625851,
+    "confidence": 0.966982
+  },
+  {
+    "text": ",",
+    "startMs": 8318.91156462585,
+    "endMs": 8338.91156462585,
+    "timestampMs": 8298.91156462585,
+    "confidence": 0.814515
+  },
+  {
+    "text": " with",
+    "startMs": 8338.91156462585,
+    "endMs": 8748.91156462585,
+    "timestampMs": 8518.91156462585,
+    "confidence": 0.966691
+  },
+  {
+    "text": " 58",
+    "startMs": 8748.91156462585,
+    "endMs": 9308.91156462585,
+    "timestampMs": 8978.91156462585,
+    "confidence": 0.997369
+  },
+  {
+    "text": "%",
+    "startMs": 9308.91156462585,
+    "endMs": 9328.91156462585,
+    "timestampMs": 9458.91156462585,
+    "confidence": 0.676276
+  },
+  {
+    "text": " humidity",
+    "startMs": 9328.91156462585,
+    "endMs": 10108.91156462585,
+    "timestampMs": 9938.91156462585,
+    "confidence": 0.990087
+  },
+  {
+    "text": ".",
+    "startMs": 10108.91156462585,
+    "endMs": 10118.91156462585,
+    "timestampMs": 10078.91156462585,
+    "confidence": 0.908328
+  },
+  {
+    "text": "Looking",
+    "startMs": 10125.283446712017,
+    "endMs": 10625.283446712017,
+    "timestampMs": 10435.283446712017,
+    "confidence": 0.82195
+  },
+  {
+    "text": " ahead",
+    "startMs": 10625.283446712017,
+    "endMs": 11075.283446712017,
+    "timestampMs": 10775.283446712017,
+    "confidence": 0.923139
+  },
+  {
+    "text": ",",
+    "startMs": 11075.283446712017,
+    "endMs": 11125.283446712017,
+    "timestampMs": 11095.283446712017,
+    "confidence": 0.886024
+  },
+  {
+    "text": " a",
+    "startMs": 11125.283446712017,
+    "endMs": 11195.283446712017,
+    "timestampMs": 11235.283446712017,
+    "confidence": 0.990543
+  },
+  {
+    "text": " high",
+    "startMs": 11195.283446712017,
+    "endMs": 11575.283446712017,
+    "timestampMs": 11375.283446712017,
+    "confidence": 0.998462
+  },
+  {
+    "text": " of",
+    "startMs": 11575.283446712017,
+    "endMs": 11625.283446712017,
+    "timestampMs": 11535.283446712017,
+    "confidence": 0.99942
+  },
+  {
+    "text": " 28",
+    "startMs": 11625.283446712017,
+    "endMs": 12065.283446712017,
+    "timestampMs": 11915.283446712017,
+    "confidence": 0.995448
+  },
+  {
+    "text": " today",
+    "startMs": 12065.283446712017,
+    "endMs": 12425.283446712017,
+    "timestampMs": 12395.283446712017,
+    "confidence": 0.972728
+  },
+  {
+    "text": ",",
+    "startMs": 12425.283446712017,
+    "endMs": 12765.283446712017,
+    "timestampMs": 12775.283446712017,
+    "confidence": 0.865613
+  },
+  {
+    "text": " 30",
+    "startMs": 12765.283446712017,
+    "endMs": 13005.283446712017,
+    "timestampMs": 12995.283446712017,
+    "confidence": 0.992142
+  },
+  {
+    "text": " tomorrow",
+    "startMs": 13005.283446712017,
+    "endMs": 13795.283446712017,
+    "timestampMs": 13515.283446712017,
+    "confidence": 0.999241
+  },
+  {
+    "text": ",",
+    "startMs": 13795.283446712017,
+    "endMs": 13805.283446712017,
+    "timestampMs": 13815.283446712017,
+    "confidence": 0.779529
+  },
+  {
+    "text": " and",
+    "startMs": 13805.283446712017,
+    "endMs": 14005.283446712017,
+    "timestampMs": 13995.283446712017,
+    "confidence": 0.978416
+  },
+  {
+    "text": " 31",
+    "startMs": 14005.283446712017,
+    "endMs": 14395.283446712017,
+    "timestampMs": 14375.283446712017,
+    "confidence": 0.998826
+  },
+  {
+    "text": " on",
+    "startMs": 14395.283446712017,
+    "endMs": 14525.283446712017,
+    "timestampMs": 14635.283446712017,
+    "confidence": 0.998393
+  },
+  {
+    "text": " Aug",
+    "startMs": 14525.283446712017,
+    "endMs": 14725.283446712017,
+    "timestampMs": 14835.283446712017,
+    "confidence": 0.76294
+  },
+  {
+    "text": ".",
+    "startMs": 14725.283446712017,
+    "endMs": 15045.283446712017,
+    "timestampMs": 15115.283446712017,
+    "confidence": 0.832471
+  },
+  {
+    "text": " 3",
+    "startMs": 15045.283446712017,
+    "endMs": 15115.283446712017,
+    "timestampMs": 15235.283446712017,
+    "confidence": 0.999016
+  },
+  {
+    "text": ",",
+    "startMs": 15115.283446712017,
+    "endMs": 15245.283446712017,
+    "timestampMs": 15475.283446712017,
+    "confidence": 0.969655
+  },
+  {
+    "text": " with",
+    "startMs": 15245.283446712017,
+    "endMs": 15545.283446712017,
+    "timestampMs": 15695.283446712017,
+    "confidence": 0.995347
+  },
+  {
+    "text": " a",
+    "startMs": 15545.283446712017,
+    "endMs": 15565.283446712017,
+    "timestampMs": 15875.283446712017,
+    "confidence": 0.963909
+  },
+  {
+    "text": " chance",
+    "startMs": 15565.283446712017,
+    "endMs": 15965.283446712017,
+    "timestampMs": 16095.283446712017,
+    "confidence": 0.998591
+  },
+  {
+    "text": " of",
+    "startMs": 15965.283446712017,
+    "endMs": 16155.283446712017,
+    "timestampMs": 16315.283446712017,
+    "confidence": 0.998628
+  },
+  {
+    "text": " afternoon",
+    "startMs": 16155.283446712017,
+    "endMs": 16735.28344671202,
+    "timestampMs": 16715.28344671202,
+    "confidence": 0.996073
+  },
+  {
+    "text": " showers",
+    "startMs": 16735.28344671202,
+    "endMs": 17275.28344671202,
+    "timestampMs": 17175.28344671202,
+    "confidence": 0.999954
+  },
+  {
+    "text": " each",
+    "startMs": 17275.28344671202,
+    "endMs": 17585.28344671202,
+    "timestampMs": 17415.28344671202,
+    "confidence": 0.999725
+  },
+  {
+    "text": " day",
+    "startMs": 17585.28344671202,
+    "endMs": 17855.28344671202,
+    "timestampMs": 17835.28344671202,
+    "confidence": 0.999779
+  },
+  {
+    "text": ".",
+    "startMs": 17855.28344671202,
+    "endMs": 17855.28344671202,
+    "timestampMs": 17835.28344671202,
+    "confidence": 0.974704
+  },
+  {
+    "text": "Light",
+    "startMs": 17873.26530612245,
+    "endMs": 18213.26530612245,
+    "timestampMs": 18103.26530612245,
+    "confidence": 0.928407
+  },
+  {
+    "text": " rains",
+    "startMs": 18213.26530612245,
+    "endMs": 18563.26530612245,
+    "timestampMs": 18423.26530612245,
+    "confidence": 0.817706
+  },
+  {
+    "text": " possible",
+    "startMs": 18563.26530612245,
+    "endMs": 19123.26530612245,
+    "timestampMs": 18883.26530612245,
+    "confidence": 0.985992
+  },
+  {
+    "text": " in",
+    "startMs": 19123.26530612245,
+    "endMs": 19263.26530612245,
+    "timestampMs": 19103.26530612245,
+    "confidence": 0.998491
+  },
+  {
+    "text": " the",
+    "startMs": 19263.26530612245,
+    "endMs": 19473.26530612245,
+    "timestampMs": 19283.26530612245,
+    "confidence": 0.999733
+  },
+  {
+    "text": " after",
+    "startMs": 19473.26530612245,
+    "endMs": 19823.26530612245,
+    "timestampMs": 19523.26530612245,
+    "confidence": 0.994285
+  },
+  {
+    "text": "no",
+    "startMs": 19823.26530612245,
+    "endMs": 20183.26530612245,
+    "timestampMs": 19763.26530612245,
+    "confidence": 0.999024
+  },
+  {
+    "text": "ons",
+    "startMs": 20183.26530612245,
+    "endMs": 20273.26530612245,
+    "timestampMs": 19943.26530612245,
+    "confidence": 0.999918
+  },
+  {
+    "text": ",",
+    "startMs": 20273.26530612245,
+    "endMs": 20313.26530612245,
+    "timestampMs": 20183.26530612245,
+    "confidence": 0.681908
+  },
+  {
+    "text": " so",
+    "startMs": 20313.26530612245,
+    "endMs": 20533.26530612245,
+    "timestampMs": 20403.26530612245,
+    "confidence": 0.715712
+  },
+  {
+    "text": " keep",
+    "startMs": 20533.26530612245,
+    "endMs": 20743.26530612245,
+    "timestampMs": 20703.26530612245,
+    "confidence": 0.996867
+  },
+  {
+    "text": " an",
+    "startMs": 20743.26530612245,
+    "endMs": 20883.26530612245,
+    "timestampMs": 20883.26530612245,
+    "confidence": 0.980509
+  },
+  {
+    "text": " umbrella",
+    "startMs": 20883.26530612245,
+    "endMs": 21473.26530612245,
+    "timestampMs": 21223.26530612245,
+    "confidence": 0.991619
+  },
+  {
+    "text": " handy",
+    "startMs": 21473.26530612245,
+    "endMs": 22003.26530612245,
+    "timestampMs": 21743.26530612245,
+    "confidence": 0.99557
+  },
+  {
+    "text": ",",
+    "startMs": 22003.26530612245,
+    "endMs": 22003.26530612245,
+    "timestampMs": 22043.26530612245,
+    "confidence": 0.533447
+  },
+  {
+    "text": " otherwise",
+    "startMs": 22003.26530612245,
+    "endMs": 22943.26530612245,
+    "timestampMs": 22403.26530612245,
+    "confidence": 0.934205
+  },
+  {
+    "text": ",",
+    "startMs": 22943.26530612245,
+    "endMs": 22943.26530612245,
+    "timestampMs": 22943.26530612245,
+    "confidence": 0.754625
+  },
+  {
+    "text": " a",
+    "startMs": 22943.26530612245,
+    "endMs": 23083.26530612245,
+    "timestampMs": 23083.26530612245,
+    "confidence": 0.92613
+  },
+  {
+    "text": " warm",
+    "startMs": 23083.26530612245,
+    "endMs": 23733.26530612245,
+    "timestampMs": 23403.26530612245,
+    "confidence": 0.995196
+  },
+  {
+    "text": ",",
+    "startMs": 23733.26530612245,
+    "endMs": 23743.26530612245,
+    "timestampMs": 23763.26530612245,
+    "confidence": 0.954676
+  },
+  {
+    "text": " pleasant",
+    "startMs": 23743.26530612245,
+    "endMs": 24213.26530612245,
+    "timestampMs": 24043.26530612245,
+    "confidence": 0.999634
+  },
+  {
+    "text": " week",
+    "startMs": 24213.26530612245,
+    "endMs": 24443.26530612245,
+    "timestampMs": 24303.26530612245,
+    "confidence": 0.996972
+  },
+  {
+    "text": " ahead",
+    "startMs": 24443.26530612245,
+    "endMs": 24743.26530612245,
+    "timestampMs": 24723.26530612245,
+    "confidence": 0.999352
+  },
+  {
+    "text": ".",
+    "startMs": 24743.26530612245,
+    "endMs": 24743.26530612245,
+    "timestampMs": 24723.26530612245,
+    "confidence": 0.821316
+  }
+]

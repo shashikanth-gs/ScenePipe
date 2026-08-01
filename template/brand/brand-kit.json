@@ -1,0 +1,27 @@
+{
+  "name": "My Brand",
+  "colors": {
+    "primary": "#38bdf8",
+    "secondary": "#f472b6",
+    "background": "#05030d",
+    "backgroundMid": "#150a28",
+    "text": "#f8fafc",
+    "dim": "#94a3b8",
+    "highlight": "#fbbf24",
+    "danger": "#f87171"
+  },
+  "fonts": {
+    "display": { "googleFont": "SpaceGrotesk", "weights": ["500", "700"] },
+    "body": { "googleFont": "Inter", "weights": ["400", "600", "800"] },
+    "mono": { "googleFont": "JetBrainsMono", "weights": ["400", "700"] }
+  },
+  "logo": {
+    "mark": "brand/logo/mark.svg",
+    "wordmark": "brand/logo/wordmark.svg"
+  },
+  "safeZones": {
+    "reel": { "topPx": 170, "bottomPx": 300 },
+    "story": { "topPx": 170, "bottomPx": 300 },
+    "post": { "topPx": 0, "bottomPx": 0 }
+  }
+}

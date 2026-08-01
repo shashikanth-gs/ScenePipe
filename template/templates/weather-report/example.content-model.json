@@ -1,0 +1,34 @@
+{
+  "treatment": "weather-report",
+  "platform": "instagram",
+  "assetType": "reel",
+  "location": "Bangalore",
+  "dateLabel": "August 1",
+  "intro": {
+    "headline": "Your Bangalore weather update",
+    "narration": "Here's your Bangalore weather update for today, August 1st."
+  },
+  "current": {
+    "tempC": 26,
+    "conditionLabel": "Partly Cloudy",
+    "conditionCategory": "partly-cloudy",
+    "feelsLikeC": 25,
+    "humidityPercent": 58,
+    "windKph": 24,
+    "windDirection": "W",
+    "narration": "Right now, it's 26 degrees and partly cloudy — feeling like 25, with 58 percent humidity."
+  },
+  "forecast": {
+    "days": [
+      { "label": "Aug 1", "conditionCategory": "partly-cloudy", "highC": 28, "lowC": 20, "rainChancePercent": 19 },
+      { "label": "Aug 2", "conditionCategory": "partly-cloudy", "highC": 30, "lowC": 20, "rainChancePercent": 23 },
+      { "label": "Aug 3", "conditionCategory": "sunny", "highC": 31, "lowC": 20, "rainChancePercent": 17 }
+    ],
+    "narration": "Looking ahead: a high of 28 today, 30 tomorrow, and 31 on August 3rd, with a chance of afternoon showers each day."
+  },
+  "closing": {
+    "tip": "Keep an umbrella handy in the afternoons.",
+    "narration": "Light rain's possible in the afternoons, so keep an umbrella handy — otherwise, a warm, pleasant week ahead."
+  },
+  "outroSubtitle": "Follow for daily Bangalore weather updates"
+}

@@ -1,0 +1,44 @@
+{
+  "treatment": "comparison",
+  "platform": "instagram",
+  "assetType": "reel",
+  "hook": {
+    "question": "What's the real difference?",
+    "subtitle": "What's the real difference?",
+    "narration": "What's the real difference between an LLM and an AI agent?"
+  },
+  "conceptA": {
+    "label": "LLM",
+    "icon": "🧠",
+    "bullets": ["Reads", "Reasons", "Writes"],
+    "narration": "An LLM is the brain. It reads, reasons, and writes text."
+  },
+  "limitation": {
+    "label": "Can't take action",
+    "blockedActions": ["Click a button", "Run code"],
+    "narration": "But alone, it can't click a button, or run code."
+  },
+  "conceptB": {
+    "label": "Agent Harness",
+    "icon": "⚙️",
+    "bullets": ["Memory", "Tools", "Loop"],
+    "narration": "An agent harness wraps that brain with memory, tools, and a loop, letting it act, check results, and try again."
+  },
+  "analogy": {
+    "intro": "Think of it like this",
+    "aLabel": "Pilot",
+    "aIcon": "🧑‍✈️",
+    "aSub": "= the LLM",
+    "bLabel": "Plane",
+    "bIcon": "✈️",
+    "bSub": "= the harness",
+    "takeaway": "One decides. The other moves.",
+    "narration": "Think of the LLM as the pilot, and the harness as the plane."
+  },
+  "closer": {
+    "lineA": "LLM talks.",
+    "lineB": "Harness acts.",
+    "narration": "Alone, an LLM only talks. With a harness, it gets things done."
+  },
+  "outroSubtitle": "Follow for more AI breakdowns"
+}

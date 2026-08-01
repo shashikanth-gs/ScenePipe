@@ -1,0 +1,29 @@
+{
+  "name": "scenepipe",
+  "version": "0.1.0",
+  "description": "Bootstrap a brand-consistent, AI-authored, deterministically-rendered social media content pipeline (reels, posts, carousels, stories) in one command.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "scenepipe": "./bin/scenepipe.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "template"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "remotion",
+    "instagram",
+    "content-generation",
+    "claude-code",
+    "ai-agent",
+    "social-media"
+  ],
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}

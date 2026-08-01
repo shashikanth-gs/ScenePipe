@@ -1,0 +1,21 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Rendered assets and generated audio/caption artifacts per job
+content/*/
+!content/.gitkeep
+
+# Ignore the direct remotion CLI output folder, artifacts should land in content/<slug>/output
+out
+
+# whisper.cpp is downloaded on first transcription run, ~1.5GB, never commit
+whisper.cpp
+
+# Voice synthesis cache — content-addressed, regenerated on demand
+.cache
+
+# Generated public assets per job (audio/captions served to Remotion) —
+# public/demo/ is the one shipped exception, used by the Studio preview.
+public/content
