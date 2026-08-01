@@ -1,0 +1,93 @@
+# Contributing to ScenePipe
+
+Both of the things below are intentionally manual. The whole point of this
+project is that the AI never does either step itself — it only ever picks a
+treatment + style by name and fills in content. Growing the library is a
+deliberate, reviewed, offline activity, same as reviewing any other PR.
+
+## Repo layout
+
+- `bin/`, `src/` — the `scenepipe` CLI itself (scaffolding logic).
+- `template/` — what gets copied into a new project by `npx scenepipe`.
+  - `template/skills/<name>/` — canonical skill packages, following the
+    [skills.sh](https://skills.sh) spec: `scenepipe-strategy`,
+    `scenepipe-author-<treatment>`, `scenepipe-visual-standards`, and
+    `scenepipe-<treatment>-<style>` per visual style. Each style skill
+    bundles its `SKILL.md` + `component.tsx` together.
+  - `template/.claude/skills/*` and `template/.codex/skills/*` — symlinks
+    into the above, so each agent auto-discovers them with no duplication.
+  - `template/AGENTS.md` — the shared brief every agent tool reads, at the
+    project root (this matters: the [agents.md](https://agents.md) spec
+    requires root placement to be picked up consistently across tools).
+  - `template/templates/<treatment>/` — the treatment's schema,
+    content-model validation, and style dispatcher (`index.tsx`). No
+    rendering code lives here directly — that's all in the style skills.
+  - `template/src/` — shared, brand-agnostic infra used by every style:
+    `Chrome.tsx` (logo/timecode/scrubber), `Grain.tsx`, `graphics.tsx`
+    (generated vector primitives), `transitionTiming.ts`, `Logo.tsx`,
+    `theme.ts`, `fonts.ts`.
+
+## Adding a new treatment (a new content shape)
+
+A "treatment" is a content shape — e.g. `comparison` (two concepts, one
+extends the other). To add one:
+
+1. `templates/<name>/schema.ts` — the Remotion props shape (zod), including
+   a `visualStyle` enum with at least one option.
+2. `templates/<name>/styleTypes.ts` — the shared `<Name>ScenesProps` shape
+   every style for this treatment implements (`{ content, durations,
+   transitionLength }`).
+3. `templates/<name>/contentModel.schema.mjs` — the shape the AI is allowed
+   to write, plus `narrationBeats()` and `toTreatmentProps()`.
+4. `templates/<name>/index.tsx` — the style dispatcher: computes shared
+   timing (`compensateForTransitions`), picks a style component by
+   `visualStyle`, wraps it with `Audio`/`CaptionsOverlay`/`Grain`/`Chrome`.
+5. `templates/<name>/example.content-model.json` — a filled reference.
+6. At least one style skill (see below) — a treatment with zero styles
+   can't render anything.
+7. Register it in `templates/registry.ts`, `scripts/render.mjs`'s
+   `COMPOSITION_IDS`, and add a `skills/scenepipe-author-<name>/SKILL.md`
+   (symlinked into both `.claude/skills/` and `.codex/skills/`).
+
+## Adding a new visual style (for an existing treatment)
+
+A "style" is how a treatment's content gets rendered — e.g. `cinematic`,
+`kinetic-typography`. Read `skills/scenepipe-visual-standards/SKILL.md`
+first: every style has to clear that bar (asymmetric layout, real scene
+transitions, generated graphics, brand-kit-driven, no plain/centered
+fallback) or it doesn't get added, no exceptions.
+
+1. `skills/scenepipe-<treatment>-<style>/component.tsx` — the actual
+   Remotion scenes, exporting one `<Treatment>Scenes` component matching
+   that treatment's `styleTypes.ts` shape.
+2. `skills/scenepipe-<treatment>-<style>/SKILL.md` — when to pick this
+   style over the treatment's others, what it looks like, any
+   style-specific authoring guidance.
+3. Symlink it from both agent directories:
+   `.claude/skills/scenepipe-<treatment>-<style>` and
+   `.codex/skills/scenepipe-<treatment>-<style>`, both pointing at
+   `../../skills/scenepipe-<treatment>-<style>`. Use
+   `fs.cp(..., { verbatimSymlinks: true })` if you're doing this
+   programmatically — without that flag, Node rewrites relative symlinks
+   into absolute paths pointing at *this* repo's own checkout instead of
+   wherever they get copied to. That was a real, shipped bug once; don't
+   reintroduce it.
+4. Add the style name to that treatment's `schema.ts` and
+   `contentModel.schema.mjs` `visualStyle` enums, and register the
+   component in the treatment's `index.tsx` dispatcher map.
+5. Render stills across the full timeline and check for layout collisions
+   — captions overlapping on-screen text is the most common one — before
+   considering it done.
+
+## Testing a change
+
+There's no automated test suite yet (see the README's "where things
+stand"). In practice, verifying a change means:
+
+- `npx tsc --noEmit` in `template/` (and in any scaffolded project you're
+  testing against) — catches type errors immediately.
+- `npx remotion still <composition-id> --frame=<n> --props='...'` at a few
+  points across a treatment's timeline, especially at scene-transition
+  boundaries, to catch layout collisions visually.
+- A full `node scripts/render.mjs <slug>` run against a real content model
+  end to end at least once before calling a treatment/style done.
